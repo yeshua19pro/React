@@ -26,18 +26,18 @@ reprovado(nReprovado);
 
 //Funciones con parametros por default
 
-function imc (peso = 0, altura = 1){
-    let masaCorporal = (peso / (altura)^2)*10;
-    console.log(`Su imc es de: ${masaCorporal}`);
+function imc(peso = 0, altura = 1) {
+  let masaCorporal = ((peso / altura) ^ 2) * 10;
+  console.log(`Su imc es de: ${masaCorporal}`);
 }
-imc(72,180);
+imc(72, 180);
 
-let quemarGrasa = function(tiempoEjercicio = 0, veces = 0){
-    let grasaQuemada = tiempoEjercicio * veces;
-    console.log(`Ha quemado ${grasaQuemada} calorias`)
-} 
+let quemarGrasa = function(tiempoEjercicio = 0, veces = 0) {
+  let grasaQuemada = tiempoEjercicio * veces;
+  console.log(`Ha quemado ${grasaQuemada} calorias`);
+};
 //llamado sin parametros para verificar el valor por defecto
 quemarGrasa();
 
 //llamado con parametros
-quemarGrasa(30,2);
+quemarGrasa(30, 2);
